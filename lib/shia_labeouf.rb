@@ -1,5 +1,3 @@
 class Object
-  def just(&block)
-    tap(&block)
-  end
+  alias_method :just, :tap
 end
